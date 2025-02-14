@@ -17,12 +17,12 @@ export class AuthRouter {
 			(req: Request, res: Response, _next: NextFunction) =>
 				this.authController.register(req, res)
 			/*
-            #swagger.tags = ['Auth']
-            #swagger.requestBody = {
-              required: true,
-              schema: {$ref: '#/components/schemas/RegisterRequest'}
-            }
-            */
+			#swagger.tags = ['Auth']
+			#swagger.requestBody = {
+				required: true,
+				schema: {$ref: '#/components/schemas/RegisterRequest'}
+			}
+			*/
 		);
 
 		this.router.post(
@@ -30,12 +30,12 @@ export class AuthRouter {
 			(req: Request, res: Response, _next: NextFunction) =>
 				this.authController.login(req, res)
 			/*
-            #swagger.tags = ['Auth']
-            #swagger.requestBody = {
-              required: true,
-              schema: {$ref: '#/components/schemas/LoginRequest'}
-            }
-            */
+			#swagger.tags = ['Auth']
+			#swagger.requestBody = {
+				required: true,
+				schema: {$ref: '#/components/schemas/LoginRequest'}
+			}
+			*/
 		);
 	}
 

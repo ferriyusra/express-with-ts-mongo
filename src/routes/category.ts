@@ -23,17 +23,17 @@ export class CategoryRouter {
 			(req: IReqUser, res: Response, next: NextFunction) =>
 				this.categoryController.create(req, res)
 			/*
-	#swagger.tags = ['Category']
-	#swagger.security = [{
-		"bearerAuth": {}
-	}]
-	#swagger.requestBody = {
-		required: true,
-		schema: {
-			$ref: '#/components/schemas/CreateCategoryRequest'
-		}
-	}
-	*/
+			#swagger.tags = ['Category']
+			#swagger.security = [{
+				"bearerAuth": {}
+			}]
+			#swagger.requestBody = {
+				required: true,
+				schema: {
+					$ref: '#/components/schemas/CreateCategoryRequest'
+				}
+			}
+			*/
 		);
 	}
 
